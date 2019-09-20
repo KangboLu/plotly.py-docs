@@ -22,8 +22,7 @@ jupyter:
     pygments_lexer: ipython3
     version: 3.7.3
   plotly:
-    description: How to make an area on Map in Python with
-      Plotly.
+    description: How to make an area on Map in Python with Plotly.
     display_as: maps
     has_thumbnail: true
     ipynb: ~notebook_demo/56
@@ -46,8 +45,8 @@ To plot on Mapbox maps with Plotly you *may* need a Mapbox account and a public 
 ### How to Show an Area on a Map 
 
 There are three different ways to show an area in a mapbox: 
-- Set `fill` attribute to 'toself' 
-- Define the corresponding geojson
+- Use [Scattermapbox](https://plot.ly/python/reference/#scattermapbox) trace and set `fill` attribute to 'toself' 
+- Use [Scattermapbox](https://plot.ly/python/reference/#scattermapbox) trace and define the corresponding geojson
 - Use the new trace type: [Choroplethmapbox](https://plot.ly/python/mapbox-county-choropleth/) for mapbox cases, or [Choropleth](https://plot.ly/python/choropleth-maps/) trace for non-mapbox ones.
 
 The following example uses `Scattermapbox` and sets `fill = 'toself'` 
@@ -90,6 +89,8 @@ fig.show()
 ```
 
 ### Use the Coresponding Geojson
+
+The second way is using Scattermapbox trace with the corresponding geojson.
 
 ```python
 import plotly.graph_objects as go
@@ -139,4 +140,8 @@ fig.show()
 ```
 
 #### Reference
-See https://plot.ly/python/reference/#choroplethmapbox for more information about mapbox and their attribute options.
+See https://plot.ly/python/reference/#scattermapbox for more information about mapbox and their attribute options.
+
+```python
+
+```
