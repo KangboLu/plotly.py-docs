@@ -88,7 +88,7 @@ fig.update_layout(
 fig.show()
 ```
 
-### Use the Coresponding Geojson
+### Use the Corresponding Geojson
 
 The second way is using Scattermapbox trace with the corresponding geojson.
 
@@ -141,7 +141,3 @@ fig.show()
 
 #### Reference
 See https://plot.ly/python/reference/#scattermapbox for more information about mapbox and their attribute options.
-
-```python
-
-```
